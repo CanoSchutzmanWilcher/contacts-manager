@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.nio.file.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -21,28 +20,24 @@ public class Main {
         readAllContacts();
     }
 
-    public static void writeContactsToFile() throws IOException {
-        String directory = "data";
-        String filename = "info.txt";
-        Path dataDirectory = Paths.get(directory);
-        Path dataFile = Paths.get(directory, filename);
-
-        if (Files.notExists(dataDirectory)) {
-            Files.createDirectories(dataDirectory);
-        }
-
-        if (! Files.exists(dataFile)) {
-            Files.createFile(dataFile);
-        }
-
-        ArrayList<String> contacts = new ArrayList<>();
-        contacts.add("");
-        contacts.add("");
-        contacts.add("");
-        contacts.add("");
-
-        Files.write(dataFile, contacts, StandardOpenOption.APPEND);
+    private static void writeContactsToFile() throws IOException {
     }
+
+//    public static void writeContactsToFile() throws IOException {
+//        String directory = "data";
+//        String filename = "info.txt";
+//        Path dataDirectory = Paths.get(directory);
+//        Path dataFile = Paths.get(directory, filename);
+//
+//        if (Files.notExists(dataDirectory)) {
+//            Files.createDirectories(dataDirectory);
+//        }
+//
+//        if (! Files.exists(dataFile)) {
+//            Files.createFile(dataFile);
+//        }
+//
+//    }
 
     public static void readAllContacts() {
         String directory = "data";
