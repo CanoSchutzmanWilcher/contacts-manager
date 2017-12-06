@@ -1,6 +1,5 @@
-Jack Blank
-1231231234
-Jane Doe
-2342342345
-Sam Space
-3453453456
+Sam Space | 3453453456
+Jack Blank | 1238429279
+Alice Glass | 2342342345
+Susan Sue | 3453453456
+Joey Joe | 4564564567
